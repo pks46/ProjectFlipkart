@@ -3,15 +3,16 @@
 <suite name="Flipkart maven Suite1" >
 
 
-  <test name="Flipkar Testing" >
-     <packages>
-       <package name="RunnerFiles.*" />
-    </packages>
-    <!-- <classes>
+  <test name="Flipkart Getting the Headers and Footers" >
+    <classes>
     	<class name="RunnerFiles.TestRunner"/>
-    	<class name="RunnerFiles.RunnerOrder"/>
-    </classes> -->
+    </classes> 
   </test>
  
-  
+   <test name="Flipkart Mobile Order" >
+    <classes>
+    	<class name="RunnerFiles.RunnerOrder"/>
+    </classes> 
+  </test>
+   
 </suite>
