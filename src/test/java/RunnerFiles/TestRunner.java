@@ -15,10 +15,11 @@ public class TestRunner {
 	@Test(priority=2)
 	public void Test2() {
 		HomePageFooter.HomeFooters();
+		
 	}
 	@Test(priority=3)
 	public void Test3() {
-		HomePageTabs.CloseTab();;
+		HomePageTabs.CloseTab();
 	}
 
 }

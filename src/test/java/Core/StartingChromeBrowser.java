@@ -21,6 +21,7 @@ public class StartingChromeBrowser {
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 10);
 		try {
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//button[contains(text(),'✕')]")).click();
