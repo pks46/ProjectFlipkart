@@ -1,5 +1,8 @@
 package Core;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,9 +20,14 @@ public class StartingChromeBrowser {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//button[contains(text(),'✕')]")).click();
+		}catch(Exception e) {
+			
+			System.out.println("unable to find");
+		}
 	}
 	
-	public static void ClosingBrowser() {
-		driver.close();
-	}
 }

@@ -11,18 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Core.StartingChromeBrowser;
 
 public class HomePageTabs extends StartingChromeBrowser{
-
+	
 	public static void HomeTabs() {
 		StartingChromeBrowser.StartingBrowser();
-		wait = new WebDriverWait(driver, 10);
-		
-		try {
-			Thread.sleep(5000);
-			driver.findElement(By.xpath("//button[contains(text(),'✕')]")).click();
-		}catch(Exception e) {
-			
-			System.out.println("unable to find");
-		}
+		wait = new WebDriverWait(driver, 10);		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> containers = new ArrayList<>(driver.findElements(By.xpath("//div[contains(@class,'xtXmba')]")));
 		System.out.println("Number of TAB Containers Present = "+containers.size());
@@ -33,6 +25,6 @@ public class HomePageTabs extends StartingChromeBrowser{
 	}
 	
 	public static void CloseTab() {
-		StartingChromeBrowser.ClosingBrowser();
+		driver.close();
 	}
 }
