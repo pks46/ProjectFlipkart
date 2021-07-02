@@ -1,13 +1,27 @@
 package OrderProduct;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 
 import Core.ReadingPropertyFile;
 import Core.StartingChromeBrowser;
+import Core.TakeScreenshot;
 
 public class OrderSpecificMobile extends StartingChromeBrowser{
 	
+	public static File folder;
 	
+	public static void CreatingFolder() {
+		try {
+			folder = new File(System.getProperty("user.dir")+"/screenshots");
+			if(!folder.exists()) {
+				folder.mkdir();
+			}
+		}catch(Exception e){
+			
+		}
+	}
 	public static void GotoMobilePage() throws Exception{
 		StartingChromeBrowser.StartingBrowser();		
 		driver.findElement(By.xpath("//div[@class='xtXmba' and text()='Mobiles']")).click();
@@ -31,6 +45,8 @@ public class OrderSpecificMobile extends StartingChromeBrowser{
 		else {
 			driver.findElement(By.xpath(brandfilter)).click();
 		}
+		CreatingFolder();
+		TakeScreenshot.shot(folder+"/scr1.jpg");
 	}
 	public static void Close() {
 		driver.close();
