@@ -16,8 +16,7 @@ public class HomePageTabs extends StartingChromeBrowser{
 		System.out.println("Number of TAB Containers Present = "+containers.size());
 		for(int i=0; i<containers.size(); i++) {
 			System.out.println("container "+containers.get(i).getText());
-		}
-		
+		}		
 	}
 	
 	public static void CloseTab() {
