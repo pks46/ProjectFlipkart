@@ -13,7 +13,7 @@ public class TakeScreenshot extends StartingChromeBrowser{
 		File scrShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(scrShot, new File(path));
-			System.out.println("Screenshot saved in the Path in "+path);
+			System.out.println("Screenshot saved in the Path in a "+path);
 		} catch (IOException e) {			
 			e.printStackTrace();
 		}
