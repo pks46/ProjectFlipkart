@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 
 import Core.ReadingPropertyFile;
 import Core.StartingChromeBrowser;
-import Core.TakeScreenshot;
 
 public class OrderSpecificMobile extends StartingChromeBrowser{
 	
@@ -45,8 +44,8 @@ public class OrderSpecificMobile extends StartingChromeBrowser{
 		else {
 			driver.findElement(By.xpath(brandfilter)).click();
 		}
-		CreatingFolder();
-		TakeScreenshot.shot(folder+"/scr1.jpg");
+//		CreatingFolder();
+//		TakeScreenshot.shot(folder+"/scr1.jpg");
 	}
 	public static void Close() {
 		driver.close();
