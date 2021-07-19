@@ -1,0 +1,10 @@
+RunnerFiles\TestRunnerFooter.class
+Core\ReadingPropertyFile.class
+RunnerFiles\RunnerOrder.class
+Core\StartingChromeBrowser.class
+Core\TakeScreenshot.class
+Execution\HomePageTabs.class
+Execution\HomePageFooter.class
+RunnerFiles\TestRunner.class
+OrderProduct\MouseMovement.class
+OrderProduct\OrderSpecificMobile.class
