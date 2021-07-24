@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-02T16:09:53Z" name="Default suite" finished-at="2021-07-02T16:10:18Z" duration-ms="24422">
+  <suite name="Default suite" duration-ms="30960" started-at="2021-07-24T11:53:01Z" finished-at="2021-07-24T11:53:32Z">
     <groups>
     </groups>
-    <test started-at="2021-07-02T16:09:53Z" name="Default test" finished-at="2021-07-02T16:10:18Z" duration-ms="24422">
-      <class name="RunnerFiles.RunnerOrder">
-        <test-method signature="OrderMobile()[pri:0, instance:RunnerFiles.RunnerOrder@5a45133e]" started-at="2021-07-02T16:09:53Z" name="OrderMobile" finished-at="2021-07-02T16:10:18Z" duration-ms="24346" status="PASS">
+    <test name="Default test" duration-ms="30960" started-at="2021-07-24T11:53:01Z" finished-at="2021-07-24T11:53:32Z">
+      <class name="com.HomePage.Login_TC001">
+        <test-method status="PASS" signature="LoginFlyout()[pri:0, instance:com.HomePage.Login_TC001@1c93084c]" name="LoginFlyout" duration-ms="9297" started-at="2021-07-24T11:53:01Z" finished-at="2021-07-24T11:53:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderMobile -->
-      </class> <!-- RunnerFiles.RunnerOrder -->
+        </test-method> <!-- LoginFlyout -->
+        <test-method status="PASS" signature="ClosingFlyout()[pri:0, instance:com.HomePage.Login_TC001@1c93084c]" name="ClosingFlyout" duration-ms="10215" started-at="2021-07-24T11:53:10Z" depends-on-methods="com.HomePage.Login_TC001.LoginFlyout" finished-at="2021-07-24T11:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosingFlyout -->
+        <test-method status="PASS" signature="LoginButton()[pri:0, instance:com.HomePage.Login_TC001@1c93084c]" name="LoginButton" duration-ms="11375" started-at="2021-07-24T11:53:20Z" depends-on-methods="com.HomePage.Login_TC001.ClosingFlyout" finished-at="2021-07-24T11:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginButton -->
+      </class> <!-- com.HomePage.Login_TC001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

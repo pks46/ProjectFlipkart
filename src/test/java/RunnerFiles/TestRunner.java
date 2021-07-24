@@ -2,8 +2,8 @@ package RunnerFiles;
 
 import org.testng.annotations.Test;
 
-import Execution.HomePageFooter;
-import Execution.HomePageTabs;
+import com.Execution.HomePageFooter;
+import com.Execution.HomePageTabs;
 
 public class TestRunner {
 	
@@ -20,6 +20,7 @@ public class TestRunner {
 	@Test(priority=3)
 	public void Test3() {
 		HomePageTabs.CloseTab();
+		//System.out.println("Thread id" +Thread.currentThread().getId());
 	}
 
 }

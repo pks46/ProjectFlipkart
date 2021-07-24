@@ -5,14 +5,14 @@
 
   <test name="Flipkart Getting the Headers and Footers" >
     <classes>
-    	<class name="RunnerFiles.TestRunner"/>
+    	<class name="com.HomePage.Login_TC001"/>
     </classes> 
   </test>
  
-   <test name="Flipkart Mobile Order" >
+<!--   <test name="Flipkart Mobile Order" >
     <classes>
     	<class name="RunnerFiles.RunnerOrder"/>
     </classes> 
-  </test>
+  </test>  --> 
    
 </suite>
