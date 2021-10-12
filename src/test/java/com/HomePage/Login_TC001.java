@@ -20,7 +20,7 @@ public class Login_TC001 extends StartingChromeBrowser{
 	@FindBy(xpath="//a[contains(text(),'Login')]")
 	WebElement LoginButton;
 	
-	@Test
+	@Test(priority=1)
 	public void LoginFlyout() {
 		System.out.println("Starting the Flipkart in the Chrome Browser");
 		StartingChromeBrowser.StartingBrowser();

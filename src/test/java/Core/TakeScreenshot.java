@@ -6,10 +6,11 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
-public class TakeScreenshot extends StartingChromeBrowser{
+public class TakeScreenshot {
 
-	public static void shot(String path) {
+	public static void shot(WebDriver driver, String path) {
 		File scrShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(scrShot, new File(path));
